@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CallsFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_weight="8"
+        android:id="@+id/dialPad"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/dialedNumber"
+        android:layout_margin="20dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:background="@android:color/holo_orange_light"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        />
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:background="@color/bg_screen1"
+        android:textColor="@android:color/white"
+        android:text="Clear"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/call"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:background="@color/bg_screen1"
+        android:textColor="@android:color/white"
+        android:text="Call"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
